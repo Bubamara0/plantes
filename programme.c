@@ -78,7 +78,7 @@ int main(void)
 // Si l'utilisateur souhaite s'occuper de la schefflera
     if (strcmp(plante, listePlantes[0]) == 0)
     {
-        // On vérifie si le mois actuel est compris dans la liste des mois d'hiver, si oui alors on affiche l'arrosage d'hiver
+// On vérifie si le mois actuel est compris dans la liste des mois d'hiver, si oui alors on affiche l'arrosage d'hiver
         for (int i = 0; i < 7; i++)
         {
             if (strcmp(mois, listeMoisHiver[i]) == 0)
@@ -86,13 +86,13 @@ int main(void)
                 printf("%s\n", plantes[0].arrosageHiver);
             }
 
-        // Sinon, on affiche les informations d'arrosage pour l'été
+// Sinon, on affiche les informations d'arrosage pour l'été
             else
             {
                 printf("%s\n", plantes[0].arrosage);
             }
 
-        // Puis on affiche le reste des informations
+// Puis on affiche le reste des informations
             printf("%s\n%s\n%s\n", plantes[0].exposition, plantes[0].temperature, plantes[0].rempotage);
             return 0;
         }
